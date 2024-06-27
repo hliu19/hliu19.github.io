@@ -20,7 +20,7 @@ header {
       position: relative;
       background-color: #69887c;
       padding: 30px;
-      text-align: left;
+      text-align: center;
       font-size: 35px;
       color: white;
 } 
@@ -28,7 +28,6 @@ header {
 .main-content {
     display: flex;
     flex: 1;
-    flex-direction: column-reverse;
 }
   
 /* Create two columns/boxes that floats next to each other */

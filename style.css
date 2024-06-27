@@ -1,94 +1,100 @@
 * {
     box-sizing: border-box;
-  }
+}
   
-  html, body {
+html, body {
     height: 100%;
-  }
+}
   
-  body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     /*height: 100%;*/
-  }
+}
   
-  /* Style the header */
-  header {
+/* Style the header */
+header {
       position: relative;
-      background-color: #C1D0B5;
+      background-color: #69887c;
       padding: 30px;
-      text-align: right;
+      text-align: left;
       font-size: 35px;
       color: white;
-  } 
+} 
   
-  .main-content {
+.main-content {
     display: flex;
     flex: 1;
-  }
+    flex-direction: column-reverse;
+}
   
-  /* Create two columns/boxes that floats next to each other */
-  nav {
+/* Create two columns/boxes that floats next to each other */
+nav {
     float: left;
     width: 30%;
-    background: #78866B;
+    background: #a6b5b6;
     padding: 20px; 
     display: flex;
     flex-direction: column;
-  }
+}
   
-  /* Style the list inside the menu */
-  nav ul {
+/* Style the list inside the menu */
+nav ul {
     list-style-type: none;
     padding: 0;
-  }
+}
   
-  article {
+article {
     flex: 1;
     float: left;
     padding: 20px;
     width: 70%;
     background-color: #dfdbdb;
-  }
+}
   
-  .grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 10px;
-  }
+}
   
-  .grid-container img {
+.grid-container img {
     width: 100%;
     height: auto;
     max-width: 200px; /* Set a max-width for the images */
     display: block;
     margin: 0 auto; /* Center images if they're smaller than the column width */
-  }
+}
   
-  /* Clear floats after the columns */
-  section::after {
+section {
+    display: flex;
+    height: 100%;
+}
+
+/* Clear floats after the columns */
+section::after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  /* Style the footer */
-  footer {
+/* Style the footer */
+footer {
     background-color: #848779;
     padding: 10px;
     text-align: center;
     color: white;
     margin-top: auto;
-  }
+}
   
-  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
     nav, article {
       width: 100%;
       height: auto;
     }
-  }
+}

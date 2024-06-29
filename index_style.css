@@ -8,7 +8,7 @@ header {
     display: flex;
     height: 400px;
     background-color: darkblue;
-    padding: 1em 12em;
+    padding: 1em 1em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -31,9 +31,10 @@ nav {
 }
 
 article {
-    background-color: bisque;
     display: flex;
-    padding: 1em 15em;
+    flex: 1;
+    background-color: bisque;
+    padding: 1em;
 }
 
 .left, .right {
@@ -45,10 +46,10 @@ article {
 }
 
 .left {
-    padding: 30px;
+    height: 30%;
     align-items: flex-start;
+    justify-content: center;
 }
-
 
 .right {
     align-items: center;
@@ -74,5 +75,9 @@ footer p {
 }
 
 article {
-    height: 50vh;
+    height: 27vh;
+}
+
+#left-text {
+    flex: 1;
 }

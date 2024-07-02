@@ -39,10 +39,11 @@ header {
     background: darkblue;
     height: 300px;
     align-items: center;
+    padding: 50px;
 }
 
 #logo {
-    height: 70%;
+    height: 100%;
 }
 
 footer {
@@ -52,7 +53,8 @@ footer {
     background: darkblue;
     height: 10vh;
 }
-header, footer, article, nav {
+
+footer, article, nav {
     padding: 1em;
 }
 

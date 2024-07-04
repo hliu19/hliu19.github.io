@@ -55,10 +55,12 @@ function paint(event) {
 createPad();
 
 let clear = document.getElementById("clear");
+
 clear.addEventListener("click", function () {
     clearPad();
     createPad();
 });
 
 let resize = document.getElementById("resize");
+
 resize.addEventListener("click", promptSize);

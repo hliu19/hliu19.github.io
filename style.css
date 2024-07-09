@@ -120,8 +120,7 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: flex-start;
-    align-items: flex-start;   
+    align-items: center;   
     padding: 10px;
 }
 
@@ -131,4 +130,10 @@ footer p {
 
 p {
     font-size: 13px;
+}
+
+.thumbnail {
+    height: 100%;
+    width: 100%;
+    background-color: red;
 }

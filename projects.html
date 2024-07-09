@@ -44,12 +44,16 @@
 
                     <div class="project-card">
                         <a href="https://hliu19.github.io/odin-calculator">Calculator</a>
-                        <div class="thumbnail"></div>
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="images/calculator_thumbnail.png" alt="calculator">  
+                        </div>
                     </div>
 
                     <div class="project-card">
                         <a href="https://hliu19.github.io/odin-tic-tac-toe">Tic Tac Toe Game</a>
-                        <div class="thumbnail"></div>
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="images/tictactoe_thumbnail.png" alt="tictactoe">  
+                        </div>
                     </div>
 
                     <div class="project-card">
@@ -78,5 +82,13 @@
         </div>
     </div>
     
+    <script>
+        let thumbnail = document.getElementsByClassName("thumbnail");
+
+        for (let i = 0; i < thumbnail.length; i++) {
+            console.log("height: " + thumbnail[i].clientHeight)
+            console.log("width: " + thumbnail[i].clientWidth)
+        }
+    </script>
 </body>
 </html>
